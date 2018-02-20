@@ -8,6 +8,8 @@ def inicio():
     
     pila1=Pila()
     pila2=Pila()
+    pila3=Pila()
+    pila4=Pila()
     
     print("Bienvenido")
     while True:
@@ -26,20 +28,33 @@ def inicio():
 
             pila1.apilar(pelicula)
         elif x==2:
-            p=input("Genero de la Pelicula? ")
+            g=input("Genero de la Pelicula? ")
             while len(pila1.items) != 0:
                 pelicula=pila1.desapilar()
-                pila2.apilar(pelicula)
-                if(p==pelicula.Genero):
-                    print (pelicula.Genero)
+                
+                if(g==pelicula.Genero):
+                   pila3.apilar(pelicula)
+                else
+                   pila2.apilar(pelicula)
+            a=input("Actor de la Pelicula? ")
+            while len(pila3.items) != 0:
+                pelicula=pila3.desapilar()
+                
+                if(a==pelicula.Actor):
+                    print ("Pelicula encontrada")
+                    pila4.apilar(pelicula)
+                else 
+                  pila2.apilar(pelicula)
+                            
+                    
+                    
 
             while len(pila2.items)!= 0:
                 pelicula=pila2.desapilar()
                 pila1.apilar(pelicula)            
                 
         elif x==3:
-            print (len(pila1.items))
-        elif x==4:
+            
             break
         else:
             print ("ingrese una opcion valida")
