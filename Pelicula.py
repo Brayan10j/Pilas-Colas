@@ -52,7 +52,9 @@ def inicio():
             while len(pila2.items)!= 0:
                 pelicula=pila2.desapilar()
                 pila1.apilar(pelicula)            
-                
+            while len(pila3.items)!= 0:
+                pelicula=pila3.desapilar()
+                pila1.apilar(pelicula)     
         elif x==3:
             
             break
