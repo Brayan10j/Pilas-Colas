@@ -13,8 +13,8 @@ def inicio():
     while True:
         print ("1-Agregar Pelicula")
         print ("2-Buscar Pelicula")
-        print ("3-Cantidad de Peliculas")
-        print ("4-Salir")
+        
+        print ("3-Salir")
         x=input("Digite una opcion: ")
         x=int(x)
         if x==1:
