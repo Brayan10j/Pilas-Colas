@@ -1,7 +1,6 @@
 class Pelicula():
     def  __init__ (self,  genero, actor):
         self.Genero=genero
-        
         self.Actor=actor
 
 from Pila import *
@@ -20,9 +19,9 @@ def inicio():
         x=int(x)
         if x==1:
             
-            genero=input("genero de la Pelicula? ")
+            genero=input("Genero de la Pelicula? ")
             
-            actor=input("actor de la Pelicula? ")
+            actor=input("Actor de la Pelicula? ")
             pelicula=Pelicula(genero,actor)            
 
             pila1.apilar(pelicula)
@@ -31,8 +30,8 @@ def inicio():
             while len(pila1.items) != 0:
                 pelicula=pila1.desapilar()
                 pila2.apilar(pelicula)
-                if(p==pelicula.genero):
-                    print (pelicula.Actor)
+                if(p==pelicula.Genero):
+                    print (pelicula.Genero)
 
             while len(pila2.items)!= 0:
                 pelicula=pila2.desapilar()
